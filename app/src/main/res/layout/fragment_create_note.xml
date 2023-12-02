@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.dialogs.CreateNoteFragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColorHint="#DCC5A5"
+        android:textColor="#DCC5A5"
+        />
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Note title"
+        android:textColorHint="#DCC5A5"
+        android:textColor="#DCC5A5"
+
+        />
+    <EditText
+        android:id="@+id/note_content"
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Content"
+        android:textColorHint="#DCC5A5"
+        android:textColor="#DCC5A5"
+
+        />
+    <EditText
+        android:id="@+id/note_author_name"
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Author name"
+        android:textColorHint="#DCC5A5"
+        android:textColor="#DCC5A5"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+        <TextView
+            android:textColor="#DCC5A5"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as a spacial note"
+
+            />
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_weight="1"
+            android:textColor="#DCC5A5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            />
+
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_note"
+        android:backgroundTint="#DCC5A5"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
